@@ -204,5 +204,5 @@ const HOST = process.env.HOST ;
 
 // Start Server
 app.listen(PORT, () => {
-console.log(`✅ Server running at http://${HOST}:${PORT}`);
+console.log(`✅ Server running at http://localhost:${PORT}`);
 });
