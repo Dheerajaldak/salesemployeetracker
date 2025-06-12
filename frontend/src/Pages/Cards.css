@@ -1,0 +1,23 @@
+/* Apply hover effect to the entire card */
+.card:hover .card-footer a {
+    background-color: #1e40af; /* Blue-900 background on hover */
+  }
+  
+  .card-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Icon 3D effect when card is hovered */
+  .card:hover .card-footer a .text-sm {
+    transform: translateX(4px) scale(1.1); /* Slightly lift the icon and scale it */
+  }
+  
+  .card-footer a .text-sm {
+    transition: transform 0.3s ease-out, color 0.3s ease; /* Smooth transform for the icon */
+  }
+  
+  

@@ -1,0 +1,53 @@
+/* HomePage.css */
+
+.feature-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 165, 0, 0.8); /* Initial color - Orange */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease-in-out;
+    z-index: 0;
+  }
+  
+  .feature-card:hover::before {
+    transform: translate(-50%, -50%) scale(2.5); /* Scale up to cover the card */
+  }
+  
+  .feature-card > * {
+    z-index: 1; /* Ensure content is above the overlay */
+    position: relative;
+  }
+  
+  .color-flow-center-1::before {
+    background-color: rgba(255, 165, 0, 0.8); /* Orange */
+  }
+  
+  .color-flow-center-2::before {
+    background-color: rgba(0, 255, 0, 0.8); /* Green */
+  }
+  
+  .color-flow-center-3::before {
+    background-color: rgba(128, 0, 128, 0.8); /* Purple */
+  }
+  
+  .color-flow-center-4::before {
+    background-color: rgba(0, 0, 255, 0.8); /* Blue */
+  }
+  
+  .color-flow-center-5::before {
+    background-color: rgba(75, 0, 130, 0.8); /* Indigo */
+  }
+  
+  .color-flow-center-6::before {
+    background-color: rgba(0, 128, 128, 0.8); /* Teal */
+  }
